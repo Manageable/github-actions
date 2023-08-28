@@ -10,7 +10,7 @@
                 <httpHeaders>
                     <property>
                         <name>Authorization</name>
-                        <value>Bearer ${env.GH_TOKEN}</value>
+                        <value>${env.GH_TOKEN}</value>
                     </property>
                 </httpHeaders>
             </configuration>
