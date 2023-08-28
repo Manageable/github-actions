@@ -17,7 +17,7 @@
                 </repository>
                 <repository>
                     <id>github</id>
-                    <url>https://maven.pkg.github.com/OWNER/REPOSITORY</url>
+                    <url>https://maven.pkg.github.com/Manageable/github-actions</url>
                     <snapshots>
                         <enabled>true</enabled>
                     </snapshots>
@@ -30,7 +30,7 @@
         <server>
             <id>github</id>
             <username>Subhankar1909</username>
-            <password>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</password>
+            <password>${GH_TOKEN}</password>
         </server>
     </servers>
 </settings>
