@@ -14,13 +14,17 @@
                 <repository>
                     <id>central</id>
                     <url>https://repo1.maven.org/maven2</url>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                    <enabled>true</enabled>
+                    </snapshots>
                 </repository>
                 <repository>
                     <id>github</id>
-                    <url>https://maven.pkg.github.com/Manageable/github-actions</url>
-                    <snapshots>
-                        <enabled>true</enabled>
-                    </snapshots>
+                    <name>GitHub OWNER Apache Maven Packages</name>
+                    <url>https://maven.pkg.github.com/Manageable</url>
                 </repository>
             </repositories>
         </profile>
