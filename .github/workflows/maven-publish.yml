@@ -30,6 +30,7 @@ jobs:
       run: mvn clean install
 
     - name: Publish to GitHub Packages Apache Maven
-      run: mvn clean source:jar deploy -DuniqueVersion=false -Dmaven.source.useDefaultManifestFile=true -DdeplyAtEnd=true -Dmaven.source.includePom=true -Dmaven.install.skip=true
       env:
         GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      run: mvn clean source:jar deploy -DuniqueVersion=false -Dmaven.source.useDefaultManifestFile=true -DdeplyAtEnd=true -Dmaven.source.includePom=true -Dmaven.install.skip=true
+      
